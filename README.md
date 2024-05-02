@@ -1,4 +1,4 @@
-Tento projekt byl mým prvotním s nástrojem Raptor, nebyl psán objektově, ale procedurálně pomocí grafů a podgrafů.
+Tento projekt byl mým prvotním s nástrojem Raptor, nebyl psán objektově, ale procedurálně pomocí vývojových diagramů.
 Později byl tento projekt předělán do jazyku C# a objektově orientovaného programování pomocí frameworku MonoGame.
 Zde je k nalezení tento školní projekt, který je součástí mé Bakalářské práce:
 https://github.com/tomaszlat/ZacarovanyLes
