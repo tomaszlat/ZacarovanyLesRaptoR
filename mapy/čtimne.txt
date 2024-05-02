@@ -1,0 +1,25 @@
+Ve hře se dají vytvářet vlastní mapy, stačí vložit soubor do složky mapy ve tvaru mapa(x).txt (bez závorek, kde x je číslo mapy)
+
+Herní mapy mají velikost 12x12 políček.
+Políčko 1 x 1 se nachází vlevo dole a políčko 12x12 vpravo nahoře
+
+Ve vlastních mapách pak píšeme pouze čísla pod sebe, každé číslo bude jiný objekt přiřazený k souřadnici postupně od levehého horního rohu směrem po řádcích doprava. Na konci řádku se vždy posune o políčko níž a vrátí se na začátek řádku. Celkem tedy soubor musí mít 144 řádků s čísly 1-11.
+
+0 = nic
+1 = kámen (pevný objekt)
+2 = strom (pevný objekt)
+3 = hráč (počáteční pozice hráče na dané mapě)
+4 = dveře do další mapy (mapa(x+1).txt) - (SMÍ BÝT POUZE JEDNOU V MAPĚ)
+5 = dveře do předchozí mapy (mapa(x-1).txt) - (SMÍ BÝT POUZE JEDNOU V MAPĚ + NESMÍ BÝT V PRVNÍ MAPĚ)
+6 = jednoduchý soupeř
+7 = středně těžký soupeř
+8 = těžký soupeř
+9 = lahvička zdraví
+10 = lahvička mana
+11 = dveře konec hry (poslední dveře, které ukončí hru) (SMÍ BÝT POUZE JEDNOU V MAPĚ)
+
+
+Pozor! Poslední mapa nesmí obsahovat číslo 4, tedy dveře do další mapy, po průchodu hra spadne (raptor neumožňuje zjistit podmínku zda soubor existuje)
+
+V souboru "základní mřízka.txt" je vidět grafické zobrazení mapy, to pak stačí odentrovat ve správném pořadí tak, aby na každém řádku byla pouze jedna hodnota.
+
